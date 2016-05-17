@@ -1,9 +1,13 @@
 <component name="libraryTable">
   <library name="JMapViewer">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/JMapViewer-1.15/JMapViewer.jar!/" />
+      <root url="file://$USER_HOME$/Desktop/tmp/JMapViewer-1.15" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/tmp/JMapViewer-1.15" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/tmp/JMapViewer-1.15" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/tmp/JMapViewer-1.15" recursive="false" type="SOURCES" />
   </library>
 </component>

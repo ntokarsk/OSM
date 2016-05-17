@@ -12,5 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="JMapViewer" level="project" />
+    <orderEntry type="library" name="w3c-dom" level="project" />
   </component>
 </module>

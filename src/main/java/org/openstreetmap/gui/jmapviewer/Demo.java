@@ -1,26 +1,8 @@
 // License: GPL. For details, see Readme.txt file.
 package org.openstreetmap.gui.jmapviewer;
 
-import java.awt.BorderLayout;
-import java.awt.Cursor;
-import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import org.openstreetmap.gui.jmapviewer.events.JMVCommandEvent;
 import org.openstreetmap.gui.jmapviewer.interfaces.JMapViewerEventListener;
-import org.openstreetmap.gui.jmapviewer.interfaces.MapPolygon;
 import org.openstreetmap.gui.jmapviewer.interfaces.TileLoader;
 import org.openstreetmap.gui.jmapviewer.interfaces.TileSource;
 import org.openstreetmap.gui.jmapviewer.tilesources.BingAerialTileSource;
@@ -28,12 +10,12 @@ import org.openstreetmap.gui.jmapviewer.tilesources.MapQuestOpenAerialTileSource
 import org.openstreetmap.gui.jmapviewer.tilesources.MapQuestOsmTileSource;
 import org.openstreetmap.gui.jmapviewer.tilesources.OsmTileSource;
 
-/**
- * Demonstrates the usage of {@link JMapViewer}
- *
- * @author Jan Peter Stotz
- *
- */
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.ArrayList;
+
+
 public class Demo extends JFrame implements JMapViewerEventListener  {
 
     private static final long serialVersionUID = 1L;
@@ -181,29 +163,74 @@ public class Demo extends JFrame implements JMapViewerEventListener  {
         MapMarkerDot ebersheim = new MapMarkerDot(germanyWestLayer, "Ebersheim", 49.91, 8.24);
         MapMarkerDot empty = new MapMarkerDot(germanyEastLayer, 49.71, 8.64);
         MapMarkerDot darmstadt = new MapMarkerDot(germanyEastLayer, "Darmstadt", 49.8588, 8.643);
-        map().addMapMarker(eberstadt);
-        map().addMapMarker(ebersheim);
-        map().addMapMarker(empty);
+
+
+
+
+         // W TEN SPOSOB DODAJEMY TYLKO START I KONIEC
+        //map().addMapMarker(eberstadt);
+        //map().addMapMarker(new MapMarkerDot("Eberstadt", new Coordinate(49.814284999, 8.642065999)));
+        //map().addMapMarker(ebersheim);
+        //map().addMapMarker(empty);
+    /*
         Layer franceLayer = treeMap.addLayer("France");
         map().addMapMarker(new MapMarkerDot(franceLayer, "La Gallerie", 48.71, -1));
         map().addMapMarker(new MapMarkerDot(43.604, 1.444));
         map().addMapMarker(new MapMarkerCircle(53.343, -6.267, 0.666));
         map().addMapRectangle(new MapRectangleImpl(new Coordinate(53.343, -6.267), new Coordinate(43.604, 1.444)));
         map().addMapMarker(darmstadt);
-        treeMap.addLayer(germanyWestLayer);
-        treeMap.addLayer(germanyEastLayer);
+    */
 
-        MapPolygon bermudas = new MapPolygonImpl(c(49, 1), c(45, 10), c(40, 5));
-        map().addMapPolygon(bermudas);
-        map().addMapPolygon(new MapPolygonImpl(germanyEastLayer, "Riedstadt", ebersheim, darmstadt, eberstadt, empty));
+       // treeMap.addLayer(germanyWestLayer);
+        //treeMap.addLayer(germanyEastLayer);
 
-        map().addMapMarker(new MapMarkerCircle(germanyWestLayer, "North of Suisse", new Coordinate(48, 7), .5));
+        //MapPolygon bermudas = new MapPolygonImpl(c(49, 1), c(45, 10), c(40, 5));
+        //map().addMapPolygon(bermudas);
+
+        /*to jest ta laczaca linia*/
+        //map().addMapPolygon(new MapPolygonImpl(germanyEastLayer, "Riedstadt", ebersheim, darmstadt, eberstadt, empty));
+      //  Coordinate a = new Coordinate(49.814284999, 8.642065999);
+      //  Coordinate b = new Coordinate(49.91, 8.24);
+      //  Coordinate c = new Coordinate(49.71, 8.64);
+      //  Coordinate d = new Coordinate(49.8588, 8.643);
+       // ArrayList<Coordinate> route = new ArrayList<Coordinate>(Arrays.asList(a,b,c,d));
+
+        //ArrayList<Coordinate> route2 = new ArrayList<Coordinate>();
+        //route2.add(a); route2.add(b); route2.add(c); route2.add(d);
+
+      //  System.out.println(route);
+       // System.out.println(route2);
+       // map().addMapPolygon(new MapPolygonImpl(route2));
+
+        ParserGPX parser = new ParserGPX();
+        parser.start();
+        ArrayList<Coordinate> route2 = new ArrayList<Coordinate>();
+        ArrayList<Spot> spotList = Spot.getAllSpots();
+        for (int i = 0; i < spotList.size(); i++) {
+            Coordinate tmp = new Coordinate(spotList.get(i).getLat(), spotList.get(i).getLon());
+            route2.add(tmp);
+        }
+        //System.out.println(route2);
+
+        LayerGroup layerGroup = new LayerGroup("trasa");
+        Layer layer = layerGroup.addLayer("trasa");
+        MapMarkerDot startPoint = new MapMarkerDot(layer, "START", spotList.get(0).getLat(), spotList.get(0).getLon());
+        MapMarkerDot endPoint = new MapMarkerDot(layer, "END", spotList.get(spotList.size()-1).getLat(), spotList.get(spotList.size()-1).getLon());
+
+        map().addMapMarker(startPoint);
+        map().addMapMarker(endPoint);
+        map().addMapPolygon(new MapPolygonImpl(route2));
+
+
+
+
+/*        map().addMapMarker(new MapMarkerCircle(germanyWestLayer, "North of Suisse", new Coordinate(48, 7), .5));
         Layer spain = treeMap.addLayer("Spain");
         map().addMapMarker(new MapMarkerCircle(spain, "La Garena", new Coordinate(40.4838, -3.39), .002));
         spain.setVisible(Boolean.FALSE);
 
         Layer wales = treeMap.addLayer("UK");
-        map().addMapRectangle(new MapRectangleImpl(wales, "Wales", c(53.35, -4.57), c(51.64, -2.63)));
+        map().addMapRectangle(new MapRectangleImpl(wales, "Wales", c(53.35, -4.57), c(51.64, -2.63)));*/
 
         // map.setDisplayPosition(new Coordinate(49.807, 8.6), 11);
         // map.setTileGridVisible(true);
