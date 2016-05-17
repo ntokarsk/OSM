@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8368fa42-c536-406c-8511-ab3965a3a9ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/w3c_dom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/ParserGPX.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/gpx_files/input.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$1.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$10.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$11.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$2.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$3.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$4.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$5.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$6.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$7.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$8.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$9.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/JMapViewer.xml" afterPath="$PROJECT_DIR$/.idea/libraries/JMapViewer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OSM_draw_from_gpx.iml" afterPath="$PROJECT_DIR$/OSM_draw_from_gpx.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/gpx_files/20160204_103854.gpx" afterPath="$PROJECT_DIR$/src/main/resources/gpx_files/20160204_103854.gpx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" />
     </list>
     <ignored path="OSM_drawer_from_gpx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,13 +31,29 @@
       <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.573744">
-              <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33843538">
+              <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8717#8729#0" expanded="true" />
-                <element signature="e#11312#11313#0" expanded="true" />
-                <element signature="e#11355#11356#0" expanded="true" />
+                <element signature="e#8711#8723#0" expanded="true" />
+                <element signature="e#11541#11542#0" expanded="true" />
+                <element signature="e#11584#11585#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2572#2573#0" expanded="true" />
+                <element signature="e#2618#2619#0" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <element signature="e#2926#2927#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,6 +67,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20160311_114412.gpx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/gpx_files/20160311_114412.gpx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/gpx_files/input.txt" />
         <option value="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Parser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/ParserGPX.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java" />
       </list>
     </option>
@@ -787,7 +794,7 @@
       <workItem from="1460968698539" duration="47000" />
       <workItem from="1463405168143" duration="618000" />
       <workItem from="1463405987281" duration="6200000" />
-      <workItem from="1463492148993" duration="9868000" />
+      <workItem from="1463492148993" duration="12662000" />
     </task>
     <task id="LOCAL-00001" summary="klasa testowa&#10;">
       <created>1460453776226</created>
@@ -801,11 +808,17 @@
       <option name="project" value="LOCAL" />
       <updated>1460458899632</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="klasa testowa&#10;">
+      <created>1463504773050</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1463504773050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24374000" />
+    <option name="totallyTimeSpent" value="27168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -891,9 +904,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -914,9 +927,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -937,9 +950,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -960,9 +973,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -983,9 +996,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1006,9 +1019,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1029,9 +1042,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1060,9 +1073,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1081,9 +1094,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1102,9 +1115,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1123,9 +1136,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1135,13 +1148,6 @@
         <state vertical-scroll-proportion="0.6275168">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/gpx_files/20160311_114412.gpx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1176,15 +1182,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/gpx_files/20160311_114412.gpx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41595745">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,15 +1200,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.573744">
-          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8717#8729#0" expanded="true" />
-            <element signature="e#11312#11313#0" expanded="true" />
-            <element signature="e#11355#11356#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33843538">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8711#8723#0" expanded="true" />
+            <element signature="e#11541#11542#0" expanded="true" />
+            <element signature="e#11584#11585#0" expanded="true" />
           </folding>
         </state>
       </provider>

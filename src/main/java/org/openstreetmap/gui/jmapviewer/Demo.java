@@ -155,14 +155,14 @@ public class Demo extends JFrame implements JMapViewerEventListener  {
 
         add(treeMap, BorderLayout.CENTER);
 
-        //
-        LayerGroup germanyGroup = new LayerGroup("Germany");
+
+/*        LayerGroup germanyGroup = new LayerGroup("Germany");
         Layer germanyWestLayer = germanyGroup.addLayer("Germany West");
         Layer germanyEastLayer = germanyGroup.addLayer("Germany East");
         MapMarkerDot eberstadt = new MapMarkerDot(germanyEastLayer, "Eberstadt", 49.814284999, 8.642065999);
         MapMarkerDot ebersheim = new MapMarkerDot(germanyWestLayer, "Ebersheim", 49.91, 8.24);
         MapMarkerDot empty = new MapMarkerDot(germanyEastLayer, 49.71, 8.64);
-        MapMarkerDot darmstadt = new MapMarkerDot(germanyEastLayer, "Darmstadt", 49.8588, 8.643);
+        MapMarkerDot darmstadt = new MapMarkerDot(germanyEastLayer, "Darmstadt", 49.8588, 8.643);*/
 
 
 
@@ -214,12 +214,18 @@ public class Demo extends JFrame implements JMapViewerEventListener  {
 
         LayerGroup layerGroup = new LayerGroup("trasa");
         Layer layer = layerGroup.addLayer("trasa");
-        MapMarkerDot startPoint = new MapMarkerDot(layer, "START", spotList.get(0).getLat(), spotList.get(0).getLon());
-        MapMarkerDot endPoint = new MapMarkerDot(layer, "END", spotList.get(spotList.size()-1).getLat(), spotList.get(spotList.size()-1).getLon());
+        MapMarkerDot startPoint = new MapMarkerDot(layer, "START\n = 0 km ", spotList.get(0).getLat(), spotList.get(0).getLon());
+        MapMarkerDot endPoint = new MapMarkerDot(layer, "END\n = " + Spot.distance() + "km", spotList.get(spotList.size()-1).getLat(), spotList.get(spotList.size()-1).getLon());
+
+/*        Point zoomPoint = new Point();
+        zoomPoint.setLocation(50.06849, 19.90526);
+        map().setZoom(10, zoomPoint);*/
 
         map().addMapMarker(startPoint);
         map().addMapMarker(endPoint);
         map().addMapPolygon(new MapPolygonImpl(route2));
+
+        System.out.println("Distance = " + Spot.distance());
 
 
 
