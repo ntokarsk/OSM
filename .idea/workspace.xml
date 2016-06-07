@@ -2,21 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8368fa42-c536-406c-8511-ab3965a3a9ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/gpx_files/example.gpx" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/gpx_files/20160204_103854.gpx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/gpx_files/20160229_100000.gpx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/gpx_files/20160311_114412.gpx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/gpx_files/20160312_103859.gpx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$10.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$11.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo.class" afterPath="$PROJECT_DIR$/target/classes/org/openstreetmap/gui/jmapviewer/Demo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXLexer$DFA6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXLexer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$DFA3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$attribute_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$declaration_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$document_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$element_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$emptyElement_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$endTag_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser$startTag_return.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXProcessor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXTreeParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/libraries/w3c-dom.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXLexer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/token_parser/GPXTreeParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/gpx_files/krakow1.gpx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/gpx_files/krakow2.gpx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OSM_draw_from_gpx.iml" afterPath="$PROJECT_DIR$/OSM_draw_from_gpx.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Demo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/ParserGPX.java" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/ParserGPX.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" afterPath="$PROJECT_DIR$/src/main/java/org/openstreetmap/gui/jmapviewer/Spot.java" />
     </list>
     <ignored path="OSM_drawer_from_gpx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -828,7 +834,7 @@
       <workItem from="1465148677138" duration="3396000" />
       <workItem from="1465201425623" duration="1010000" />
       <workItem from="1465286527833" duration="2796000" />
-      <workItem from="1465289448684" duration="700000" />
+      <workItem from="1465289448684" duration="817000" />
     </task>
     <task id="LOCAL-00001" summary="klasa testowa&#10;">
       <created>1460453776226</created>
@@ -854,15 +860,21 @@
       <option name="project" value="LOCAL" />
       <updated>1463507556830</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dodana prac Alberta - kompilator">
+      <created>1465290181179</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1465290181179</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43519000" />
+    <option name="totallyTimeSpent" value="43636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -874,7 +886,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305785" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -928,7 +940,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="klasa testowa&#10;" />
     <MESSAGE value="dodane mierzenie dystansu" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodane mierzenie dystansu" />
+    <MESSAGE value="dodana prac Alberta - kompilator" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodana prac Alberta - kompilator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
