@@ -11,7 +11,7 @@ public class Spot {
     private String lat;
     private String lon;
 
-    private static ArrayList<Spot> allSpots = new ArrayList<>();
+    public static ArrayList<Spot> allSpots = new ArrayList<>();
 
     public Spot(String lat, String lon) {
         this.lat = lat;
@@ -64,15 +64,15 @@ public class Spot {
             }
         }
 
-/*
-        double theta = lon1 - lon2;
+/*      double theta = lon1 - lon2;
         double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
         dist = Math.acos(dist);
         dist = rad2deg(dist);
         dist = dist * 60 * 1.1515;
         if (unit == "K") {
             dist = dist * 1.609344;
-        } else if (unit == "N") {
+        }
+        else if (unit == "N") {
             dist = dist * 0.8684;
         }
 */

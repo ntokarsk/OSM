@@ -3,16 +3,13 @@ package org.openstreetmap.gui.jmapviewer;
 /**
  * Created by Nikodem on 12.04.2016.
  */
-import org.w3c.dom.*;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
+import java.util.ArrayList;
 
 public class ParserGPX {
     public void start(){
         try {
-            File inputFile = new File("C:\\Users\\Nikodem\\OneDrive\\workspace\\OSM_draw_from_gpx\\src\\main\\resources\\gpx_files\\20160311_114412.gpx");
+/*            File inputFile = new File("C:\\Users\\Nikodem\\OneDrive\\workspace\\OSM_draw_from_gpx\\src\\main\\resources\\gpx_files\\example.gpx");
             DocumentBuilderFactory dbFactory
                     = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -35,61 +32,30 @@ public class ParserGPX {
                     new Spot(element.getAttribute("lat"), element.getAttribute("lon"));
                 }
             }
+
+            for (int i = 0; i < Spot.allSpots.size(); i++) {
+                System.out.println("lat = " + Spot.allSpots.get(i).getLat() + "# lon = " + Spot.allSpots.get(i).getLon());
+            }*/
+
+            ArrayList<Double> tmp_cord_list = token_parser.GPXProcessor.geCoordinatesList();
+
+/*            System.err.println("ALBERT:");
+            for (int i = 0; i < tmp_cord_list.size(); i++) {
+                System.out.println(tmp_cord_list.get(i));
+            }*/
+
+            for (int i = 0; i < tmp_cord_list.size()-1; i=i+2) {
+                    new Spot(String.valueOf(tmp_cord_list.get(i)), String.valueOf(tmp_cord_list.get(i+1)));
+            }
+
+            //System.out.println("lista dwa:");
+            for (int i = 0; i < Spot.allSpots.size(); i++) {
+               //System.out.println("lat = " + Spot.allSpots.get(i).getLat() + "# lon = " + Spot.allSpots.get(i).getLon());
+            }
+
             //System.out.println("                    suma = " + suma);
             //System.out.println( " ilosc punktow w tablicy = " + Spot.getAllSpots().size());
 
-
-
-
-
-
-           /* NodeList allNodes = root.getChildNodes();
-            for(int i = 0; i < allNodes.getLength(); i++) {
-                System.out.println("Node " + i + " name = " + allNodes.item(i).getNodeName());
-            }
-
-            Element trk = (Element)allNodes.item(3);
-            System.out.println(trk.getNodeName());
-            NodeList trkNodes = trk.getChildNodes();
-
-            for(int i = 0; i < allNodes.getLength(); i++) {
-                System.out.println("Node " + i + " name = " + allNodes.item(i).getNodeName());
-            } */
-
-
-            //System.out.println(allNodes.getLength());
-/*          NodeList nList = doc.getElementsByTagName("student");
-            System.out.println("----------------------------");
-            for (int temp = 0; temp < nList.getLength(); temp++) {
-                Node nNode = nList.item(temp);
-                System.out.println("\nCurrent Element :"
-                        + nNode.getNodeName());
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element eElement = (Element) nNode;
-                    System.out.println("Student roll no : "
-                            + eElement.getAttribute("rollno"));
-                    System.out.println("First Name : "
-                            + eElement
-                            .getElementsByTagName("firstname")
-                            .item(0)
-                            .getTextContent());
-                    System.out.println("Last Name : "
-                            + eElement
-                            .getElementsByTagName("lastname")
-                            .item(0)
-                            .getTextContent());
-                    System.out.println("Nick Name : "
-                            + eElement
-                            .getElementsByTagName("nickname")
-                            .item(0)
-                            .getTextContent());
-                    System.out.println("Marks : "
-                            + eElement
-                            .getElementsByTagName("marks")
-                            .item(0)
-                            .getTextContent());
-                }
-            }*/
         } catch (Exception e) {
             e.printStackTrace();
         }

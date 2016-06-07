@@ -225,6 +225,21 @@ public class Demo extends JFrame implements JMapViewerEventListener  {
         map().addMapMarker(endPoint);
         map().addMapPolygon(new MapPolygonImpl(route2));
 
+
+/*        MapPolygonImpl kolorowanie = new MapPolygonImpl(route2);
+
+        for (int i = 1; i < 255; i++) {
+            int j = 255 - i;
+            kolorowanie.setColor(new Color(i,j,0));
+            map().addMapPolygon(kolorowanie);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }*/
+
+
         System.out.println("Distance = " + Spot.distance());
 
 
